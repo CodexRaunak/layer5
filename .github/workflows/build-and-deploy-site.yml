@@ -4,7 +4,7 @@ on:
   push:
     branches: [master]
     paths-ignore:
-      - .github/*
+      - .github/**
 
   workflow_dispatch:
   workflow_call:
@@ -35,7 +35,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: make setup
 
       - name: Build site
         run: |
