@@ -47,7 +47,6 @@ const SEO = ({
     const resolvedPath = withPrefix(value).replace(/^\//, "");
     return new URL(resolvedPath, `${siteUrl}/`).toString();
   };
-
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
