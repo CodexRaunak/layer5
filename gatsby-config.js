@@ -13,7 +13,10 @@ const siteOrigin = (process.env.GATSBY_SITE_URL || "https://layer5.io").replace(
   /\/$/,
   "",
 );
-const pathPrefix = (process.env.PATH_PREFIX || "").replace(/\/$/, "");
+const rawPathPrefix = process.env.PATH_PREFIX || "";
+const pathPrefix = rawPathPrefix
+  ? `/${rawPathPrefix.replace(/^\/+|\/+$/g, "")}`
+  : "";
 const siteRootUrl = `${siteOrigin}${pathPrefix}`.replace(/\/$/, "");
 const shouldBuildFullSite = isFullSiteBuild();
 const isLiteDevBuild = isDevelopment && !shouldBuildFullSite;
