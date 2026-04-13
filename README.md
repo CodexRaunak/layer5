@@ -21,7 +21,7 @@
 
 <h5><p align="center"><i>If you’re using Layer5 products or if you like the project, please <a href="https://github.com/layer5io/layer5/stargazers">★</a> this repository to show your support! 🤩</i></p></h5>
 
-# About Layer5
+# Abou  t Layer5
 
 [Layer5](https://layer5.io)'s cloud native application and infrastructure management software enables you to expect more from your infrastructure. We embrace _developer_-defined infrastructure. We empower developers to change how they write applications, support _operators_ in rethinking how they run modern infrastructure, and enable _teams_ to stop finger-pointing and start collaborating. [Docs](https://docs.layer5.io)
 
