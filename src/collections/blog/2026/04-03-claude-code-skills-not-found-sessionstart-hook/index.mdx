@@ -46,7 +46,7 @@ Claude Code, however, resolves skills from its own configuration directory:
 ~/.claude/skills/<skill-name>/
 ```
 
-When you run `npx skill install`, the package lands in `~/.agents/skills/`. Claude Code scans `~/.claude/skills/` at startup and finds nothing new. The two directories never communicate with each other by default.
+When you run `np skill install`, the package lands in `~/.agents/skills/`. Claude Code scans `~/.claude/skills/` at startup and finds nothing new. The two directories never communicate with each other by default.
 
 <Callout type="note" title="Quick check">
   <p>Run <code>ls ~/.agents/skills/</code> and then <code>ls ~/.claude/skills/</code>. If the skill appears in the first list but not the second, you have confirmed the mismatch.</p>
