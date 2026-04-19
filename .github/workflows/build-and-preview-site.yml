@@ -82,6 +82,8 @@ jobs:
           ref: gh-pages
           fetch-depth: 0
           path: gh-pages-maintenance
+          sparse-checkout: |
+            pr-preview
 
       - name: Prune old PR previews
         id: prune-previews
